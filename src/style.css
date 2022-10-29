@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  color: bisque;
+}
+
+html {
+  background: url(./image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --green-bg: rgba(87, 88, 87, 0.567);
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  
+}
+
+.leftside {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.nav {
+  height: 100%;
+  width: 100%;
+  background-color:var(--green-bg);
+  margin-top: 32px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  color: bisque;
+  position: relative;
+  text-decoration: none;
+  padding: 32px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: bisque;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.circle {
+  font-family: "Dancing Script", sans-serif;
+  background-color: var(--green-bg);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.container {
+  background-color:var(--green-bg);
+  height: 100%;
+  width: 100%;
+  margin: 0px 32px;
+  border-radius: 16px;
+}
