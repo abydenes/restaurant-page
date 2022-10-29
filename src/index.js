@@ -4,6 +4,8 @@ import homePager from "./home";
 import menuPager from "./menu";
 import contactPager from "./contact";
 
+
+
 const content = document.querySelector("#content");
 const circle = document.createElement("div");
 circle.classList.add("circle");
@@ -62,3 +64,5 @@ button.forEach((btn) => {
     }
   });
 });
+
+homePager();

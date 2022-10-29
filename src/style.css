@@ -32,8 +32,8 @@ body {
 }
 
 #content {
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 80%;
   display: flex;
   
 }
@@ -85,9 +85,18 @@ body {
 }
 
 .container {
-  background-color:var(--green-bg);
+  background-color:rgba(0, 0, 0, 0.625);
   height: 100%;
   width: 100%;
   margin: 0px 32px;
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  text-align: center;
+  margin: 128px;
+  font-size: 24px;
 }

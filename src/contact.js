@@ -1,5 +1,5 @@
 export default function contactPager() {  
   const container = document.querySelector(".container");
 
-  container.textContent = "this is contact"
+  container.textContent = "call 111111111"
 }
